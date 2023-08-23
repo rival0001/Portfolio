@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ 
+  /*CSS codes go here*/
 
 * {
   margin: 0;
@@ -574,60 +576,75 @@ header {
   html {
     font-size: 60%;
   }
+  .menu-items{
+    position:absolute; left:65px; top:15px;
+  }
+
+  .home-content .name{
+    position:absolute; left:200px; top:250px;
+  }
   .header .images{
-    height: 150px;
-    width: 100px;
+    height: 290px;
+    width: 290px;
     margin-bottom: 0.5rem;
+    position:absolute; right:0px;
+  }
 
   .about-content .left-content {
     flex-basis: 100%;
     text-align: center;
   }
+  .about-content .left-content .about-heading{
+    position:absolute; left:150px;  top:30px;
+  }
+  .about-content .left-content{
+    position:absolute; top:0;
+  }
 
   .about-content .right-content {
     flex-basis: 100%;
+    position:absolute; top:200
   }
-
+  .skills .right-content .skills-heading{
+    position:absolute; top:-70px; left:30px;
+  }
   .skills {
     width: 100%;
+    position:absolute; top:130px;
   }
-
-  .skills-bar .bar .progress-line {
-    width: 100%;
+  .skills-bar .bar .progress-line  {
+    width: 200%;
+    height:5px;    
   }
-
   .work-arrow {
     display: none;
   }
-
   .right-content h1 {
-    margin-top: 3.2rem;
+    margin-top: 8.7rem;
   }
-
+  .portfolio .proj-heading{
+    position:absolute; margin-top:-35; left:140; 
+  }
   .proj-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-
   .proj-1 img {
-    height: 230px;
-    width: 290px;
-    margin-bottom: 0.5rem;
+    height: 200px;
+    width: 250px;
+    margin-bottom: 0.9rem;  
   }
-
   .proj-2 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center; 
+    flex-direction: column; 
   }
-
   .proj-2 img {
     height: 250px;
     width: 290px;
     margin-bottom: 0.5rem;
   }
-
   .work-arrow-2 a {
     font-size: 1.3rem;
     text-decoration: none;
@@ -635,7 +652,6 @@ header {
     display: block;
     text-align: center;
   }
-
   .contact-content {
     width: 100%;
   }
@@ -643,62 +659,77 @@ header {
 
 @media (min-width: 501px) and (max-width: 768px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
+  }
+  .menu-items{
+    position:absolute; left:65px; top:15px;
+  }
+
+  .home-content .name{
+    position:absolute; left:200px; top:250px;
   }
   .header .images{
-    height: 150px;
-    width: 100px;
+    height: 290px;
+    width: 290px;
     margin-bottom: 0.5rem;
+    position:absolute; right:0px;
+  }
 
   .about-content .left-content {
     flex-basis: 100%;
     text-align: center;
   }
+  .about-content .left-content .about-heading{
+    position:absolute; left:150px;  top:30px;
+  }
+  .about-content .left-content{
+    position:absolute; top:0;
+  }
 
   .about-content .right-content {
     flex-basis: 100%;
+    position:absolute; top:200
   }
-
+  .skills .right-content .skills-heading{
+    position:absolute; top:-70px; left:30px;
+  }
   .skills {
     width: 100%;
+    position:absolute; top:130px;
   }
-
-  .skills-bar .bar .progress-line {
-    width: 100%;
+  .skills-bar .bar .progress-line  {
+    width: 200%;
+    height:5px;    
   }
-
   .work-arrow {
     display: none;
   }
-
   .right-content h1 {
-    margin-top: 3.2rem;
+    margin-top: 8.7rem;
   }
-
+  .portfolio .proj-heading{
+    position:absolute; margin-top:-35; left:140; 
+  }
   .proj-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-
   .proj-1 img {
-    height: 240px;
-    width: 290px;
-    margin-bottom: 0.5rem;
+    height: 200px;
+    width: 250px;
+    margin-bottom: 0.9rem;  
   }
-
   .proj-2 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center; 
+    flex-direction: column; 
   }
-
   .proj-2 img {
-    height: 240px;
+    height: 250px;
     width: 290px;
     margin-bottom: 0.5rem;
   }
-
   .work-arrow-2 a {
     font-size: 1.3rem;
     text-decoration: none;
@@ -706,7 +737,6 @@ header {
     display: block;
     text-align: center;
   }
-
   .contact-content {
     width: 100%;
   }
@@ -714,20 +744,22 @@ header {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   html {
-    font-size: 70%;
+    font-size: 50%;
   }
-  .header .images{
-    height: 230px;
-    width: 290px;
-    margin-bottom: 0.5rem;
 
   .about-content .left-content {
     flex-basis: 100%;
-    text-align: center;
+    text-align: top;
   }
 
   .about-content .right-content {
     flex-basis: 100%;
+  }
+  .header .images{
+    height: 290px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+    position:absolute; right:0px;
   }
 
   .skills {
@@ -770,7 +802,6 @@ header {
     height: 90vmax;
   }
 }
-
   
 
   
@@ -782,4 +813,4 @@ header {
   
 
   
-  
+
